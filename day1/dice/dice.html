@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>Dice Roller</title>
+<style>
+body {
+  background-color: #2E64FE;
+  box-sizing: border-box;
+}
+#dice-container {
+  height: 175px;
+}
+.section1 {
+  width: 75%;
+  height: 100px;
+  float: left;
+  padding: 15px;
+  visibility: hidden;
+}
+.section2 {
+  width: 75%;
+  height: 100px;
+  float: right;
+  padding: 15px;
+  visibility: hidden;
+}
+.image {
+  margin-left: 15px;
+  padding-right: 5px;
+  /*display: none;*/
+}
+.button {
+  background-color: #bc1939;
+  color: white;
+  font-size: 32px;
+  padding: 15px 30px;
+  box-shadow: 5px 5px 2px #775270;
+  margin-left:43.5%;
+}
+#result1{
+  float:left;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+#result2{
+  float:right;
+  margin-right: 35%;
+  margin-top: 10%;
+}
+</style>
+<script type="text/javascript">
+function generateRandomDice(){
+  number = Math.floor(Math.random() * 6) + 1;
+  return number;
+}
+function myFunction(){
+  var myResultContainer1 = document.getElementById('result1');
+  var dice1;
+  var dice2;
+  dice1 = generateRandomDice();
+  dice2 = generateRandomDice();
+  console.log(" Dice 1 is:" + dice1 + " and Dice 2 is:" + dice2);
+  myResultContainer1.innerHTML = '<img src="dice' + dice1 + '.png" class="image" height="75" width="75">';
+
+  var myResultContainer2 = document.getElementById('result2');
+  myResultContainer2.innerHTML = '<img src="dice' + dice2 + '.png" class="image" height="75" width="75">';
+}
+  </script>
+</head>
+<body>
+  <div id="dice-container">
+    <div class="section1">
+      <img src="dice1.png" class="image" height="75" width="75">
+      <img src="dice2.png" class="image" height="75" width="75">
+      <img src="dice3.png" class="image" height="75" width="75">
+      <img src="dice4.png" class="image" height="75" width="75">
+      <img src="dice5.png" class="image" height="75" width="75">
+      <img src="dice6.png" class="image" height="75" width="75">
+    </div>
+    <div class="section2">
+      <img src="dice1.png" class="image" height="75" width="75">
+      <img src="dice2.png" class="image" height="75" width="75">
+      <img src="dice3.png" class="image" height="75" width="75">
+      <img src="dice4.png" class="image" height="75" width="75">
+      <img src="dice5.png" class="image" height="75" width="75">
+      <img src="dice6.png" class="image" height="75" width="75">
+    </div>
+  </div>
+  <div class="button-holder">
+    <input type="button" class="button button1" onClick="myFunction()" value="Roll me!">
+  </div>
+  <div id="result1"></div>
+  <div id="result2"></div>
+</body>
+</html>

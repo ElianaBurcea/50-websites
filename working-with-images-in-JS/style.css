@@ -1,0 +1,16 @@
+.row{
+  float:left;
+  width: 100%;
+}
+
+.container{
+  width: 90%;
+}
+
+.mybutton{
+  height: 50px;
+}
+
+.hidden-image{
+  display:none;
+}

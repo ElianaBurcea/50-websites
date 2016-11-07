@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>Dice Roller</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+#dice-container {
+  height: 150px;
+}
+.section1 {
+  width: 50%;
+  height: 100px;
+  float: left;
+  padding: 15px;
+}
+.section2 {
+  width: 50%;
+  height: 100px;
+  float: right;
+  padding: 15px;
+}
+.image {
+  margin-left: 15px;
+  padding-right: 5px;
+  display: none;
+}
+.button {
+  margin-left: 47%;
+}
+</style>
+<script type="text/javascript">
+function generateRandomDice(){
+  number = Math.floor(Math.random() * 6) + 1;
+  return number;
+}
+function myFunction(){
+  var myResultContainer1 = document.getElementById('result1');
+  var dice1;
+  var dice2;
+  dice1 = generateRandomDice();
+  dice2 = generateRandomDice();
+  console.log(" Dice 1 is:" + dice1 + " and Dice 2 is:" + dice2);
+  hideDice();
+  document.getElementById('section1_dice' + dice1).style.display = "block";
+  document.getElementById('section2_dice' + dice2).style.display = "block";
+}
+function hideDice(){
+  var alldiceImages = document.getElementsByClassName('image');
+  for(i = 0; i < alldiceImages.length; i++){
+    alldiceImages[i].style.display = "none";
+  }
+}
+
+
+  // myResultContainer.innerHTML = " Dice 1 is:" + dice1 + " and Dice 2 is:" + dice2;
+
+// var alldiceImages;
+// section1 = document.getElementsByClassName('section1')[0];
+// alldiceImages = section1.getElementsByClassName('image');
+//
+// function myFunction(){
+//   alldiceImages.document.getElementsByClassName('image').style.display = "block";
+// }
+// myFunction();
+
+// function myFunction(){
+//   for(i = 0; i < alldiceImages.length; i++){
+//     alldiceImages[i] = [Math.floor(Math.random() * alldiceImages.length)];
+//   }
+// alldiceImages[0].style.display = "block";
+// }
+
+  </script>
+</head>
+<body>
+  <div id="dice-container">
+    <div class="section1">
+      <img src="dice1.png" id="section1_dice1" class="image" height="50" width="50">
+      <img src="dice2.png" id="section1_dice2" class="image" height="50" width="50">
+      <img src="dice3.png" id="section1_dice3" class="image" height="50" width="50">
+      <img src="dice4.png" id="section1_dice4" class="image" height="50" width="50">
+      <img src="dice5.png" id="section1_dice5" class="image" height="50" width="50">
+      <img src="dice6.png" id="section1_dice6" class="image" height="50" width="50">
+    </div>
+    <div class="section2">
+      <img src="dice1.png" id="section2_dice1" class="image" height="50" width="50">
+      <img src="dice2.png" id="section2_dice2" class="image" height="50" width="50">
+      <img src="dice3.png" id="section2_dice3" class="image" height="50" width="50">
+      <img src="dice4.png" id="section2_dice4" class="image" height="50" width="50">
+      <img src="dice5.png" id="section2_dice5" class="image" height="50" width="50">
+      <img src="dice6.png" id="section2_dice6" class="image" height="50" width="50">
+    </div>
+  </div>
+  <div class="button-holder">
+    <input type="button" class="button" onClick="myFunction()" value="Click me!">
+  </div>
+
+
+</body>
+</html>

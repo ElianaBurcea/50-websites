@@ -1,0 +1,68 @@
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Indie Flower', cursive;
+}
+.circle {
+  height: 550px;
+  width: 550px;
+  border-radius: 300px;
+  background-color: #81F79F;
+  margin: 0 auto;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  display: block;
+  position: relative;
+}
+.section-one {
+  height: 273px;
+  width: 273px;
+  border-top-left-radius: 300px;
+  background-color: #81F79F;
+  position: absolute;
+  left: 0;
+  outline: 1px;
+}
+.section-one:hover {
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+}
+.section-two {
+  height: 273px;
+  width: 273px;
+  border-top-right-radius: 300px;
+  background-color: #81F79F;
+  position: absolute;
+  left: 50%;
+}
+.section-two:hover {
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+}
+.section-three{
+  height: 275px;
+  width: 550px;
+  border-radius: 0 0 300px 300px;
+  background-color: #81F79F;
+  position: absolute;
+  top: 50%;
+}
+.section-three:hover {
+  -webkit-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 16px 4px rgba(0,0,0,0.75);
+}
+h1 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  margin-top: 50%;
+}
+h1:hover {
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+.me {
+  margin-top: 20%;
+}

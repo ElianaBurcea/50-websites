@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<head>
+<title>Rolling dice</title>
+<style>
+  body {
+    background-color: #3333ff;
+  }
+  img {
+    margin-left: 45%;
+    margin-top: 15%;
+  }
+  #randomNumber {
+    font-size: 7em;
+    font-weight: bold;
+    margin-left: 48%;
+    margin-top: 40px;
+  }
+</style>
+<script type="text/javascript">
+  function myFunction(min, max) {
+    var number = [Math.floor(Math.random() * 6) + 1];
+
+    for(i = 0; i <= 6; i++){
+      document.getElementById('randomNumber').innerHTML = number;
+    }
+  }
+</script>
+</head>
+<body>
+  <div>
+    <a href="#">
+      <img src="dice.png" alt="dice" onclick="myFunction()" height="100" width="120">
+    </a>
+  </div>
+    <p id="randomNumber"></p>
+  </body>
+</html>

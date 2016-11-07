@@ -1,0 +1,42 @@
+#container {
+  height: 500px;
+  width: 750px;
+  margin: 20px auto;
+  position: relative;
+}
+#img {
+  height: 500px;
+  width: 750px;
+  position: absolute;
+}
+#left-container {
+  height: 500px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+#right-container {
+  height: 500px;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.leftarrow {
+  height: 25px;
+  width: 25px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+}
+.rightarrow {
+  height: 25px;
+  width: 25px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin: auto;
+  right: 0;
+}

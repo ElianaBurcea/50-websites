@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>My attempt</title>
+  <style>
+.hidden-image {
+  display: none;
+}
+input {
+  margin-bottom: 5px;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="mybutton row">
+      <input type="button" value="Click on me to show images!" id="show-image"></input>
+      <input type="button" value="Click on me to hide images!" id="hide-image"></input>
+    </div>
+    <div class="imageContainer">
+      <div class="row image">
+          <img src="images/africa.jpg" class="active-image hidden-image">
+      </div>
+
+      <div class="row image">
+        <img src="images/america.jpg" class="active-image hidden-image">
+      </div>
+
+      <div class="row image">
+        <img src="images/europe.jpg" class="active-image hidden-image">
+      </div>
+
+      <div class="row image">
+        <img src="images/universe.jpg" class="active-image hidden-image">
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var allImages;
+  allImages = document.getElementsByClassName('active-image');
+  document.getElementById("show-image").onclick = function(){
+      for (i = 0; i < allImages.length; i++){
+        allImages[i].className = allImages[i].className.replace(" hidden-image"," active-image");
+      }
+  }
+  document.getElementById("hide-image").onclick = function(){
+      for (i = 0; i < allImages.length; i++){
+        allImages[i].className = allImages[i].className.replace(" active-image"," hidden-image");
+      }
+  }
+
+  </script>
+</body>
+</html>
