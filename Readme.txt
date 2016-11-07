@@ -1,1 +1,1 @@
-Learning projects
+Learning projects - trial and error
