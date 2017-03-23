@@ -51,160 +51,58 @@ body {
   width: 500px;
   height: 300px;
 }
-#row1 {
-  height: 75px;
-  border-bottom: 7px solid black;
-}
-#row2 {
-  height: 100px;
-  border-bottom: 7px solid black;
-}
-#row3 {
-  height: 45px;
-  border-bottom: 7px solid black;
-}
-#row4 {
-  height: 65px;
-}
-#row1_cell1 {
-  float: left;
-  height: 75px;
-  width: 100px;
-  border-right: 7px solid black;
-}
-#row1_cell2 {
-  float: left;
-  height: 75px;
-  width: 200px;
-  border-right: 7px solid black;
-}
-#row1_cell3 {
-  float: left;
-  height: 75px;
-  width: 50px;
-  border-right: 7px solid black;
-}
-#row1_cell4 {
-  float: right;
-  height: 75px;
-  width: 70px;
-}
-#row2_cell1 {
-  float: left;
-  height: 100px;
-  width: 100px;
-  border-right: 7px solid black;
-}
-#row2_cell2 {
-  float: left;
-  height: 100px;
-  width: 200px;
-  border-right: 7px solid black;
-}
-#row2_cell3 {
-  float: left;
-  height: 100px;
-  width: 50px;
-  border-right: 7px solid black;
-}
-#row2_cell4 {
-  float: right;
-  height: 100px;
-  width: 70px;
-}
-#row3_cell1 {
-  float: left;
-  height: 45px;
-  width: 100px;
-  border-right: 7px solid black;
-}
-#row3_cell2 {
-  float: left;
-  height: 45px;
-  width: 200px;
-  border-right: 7px solid black;
-}
-#row3_cell3 {
-  float: left;
-  height: 45px;
-  width: 50px;
-  border-right: 7px solid black;
-}
-#row3_cell4 {
-  float: right;
-  height: 45px;
-  width: 70px;
-}
-#row4_cell1 {
-  float: left;
-  height: 60px;
-  width: 100px;
-  border-right: 7px solid black;
-}
-#row4_cell2 {
-  float: left;
-  height: 60px;
-  width: 200px;
-  border-right: 7px solid black;
-}
-#row4_cell3 {
-  float: left;
-  height: 60px;
-  width: 50px;
-  border-right: 7px solid black;
-}
-#row4_cell4 {
-  float: right;
-  height: 60px;
-  width: 70px;
-}
-
-
 .row{
   width: 500px;
   float: left;
   border-bottom: 7px solid black;
 }
-
+.exception {
+  border-bottom: 0;
+}
 .height_1{
-  height: 18%;
+  height: 25%;
+  box-sizing: border-box;
 }
-
 .height_2{
-  height: 37%;
+  height: 35%;
+  box-sizing: border-box;
 }
-
 .height_3{
-  height: 26%;
+  height: 10%;
+  box-sizing: border-box;
 }
 
 .height_4{
-  height: 9%;
+  height: 30%;
+  box-sizing: border-box;
 }
-
 .col1{
+  box-sizing: border-box;
   height: 100%;
- width: 10%;
- border-right: 7px solid black;
- float: left;
+  width: 15%;
+  border-right: 7px solid black;
+  float: left;
 }
-
 .col2{
+  box-sizing: border-box;
   height: 100%;
-  width: 37%;
+  width: 30%;
   border-right: 7px solid black;
   float: left;
 }
-
 .col3{
+  box-sizing: border-box;
   height: 100%;
-  width: 17%;
+  width: 20%;
   border-right: 7px solid black;
   float: left;
 }
-
 .col4{
+  box-sizing: border-box;
   height: 100%;
-  width: 27%;
+  width: 35%;
   float: left;
+}
+#color_chosen {
+  visibility: hidden;
 }
